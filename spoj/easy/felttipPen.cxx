@@ -1,4 +1,3 @@
-#include <cassert>
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -48,8 +47,8 @@ void word(std::string& word)
                 tmp << counter + 1;
                 std::string num = tmp.str(); //int to str
                 
-                word.erase(i-counter + 1, counter);
-                i = i - counter +1;
+                word.erase(i - counter + 1, counter);
+                i = i - counter + 1;
                 word.insert(i, num);               
             }   
             counter = 0;
@@ -61,12 +60,12 @@ void word(std::string& word)
 
 int main()
 {
-//    runTests();
     std::string words[] = {"OPSS", "ABCDEF", "ABBCCCDDDDEEEEEFGGHIIJKKKL", "AAAAAAAAAABBBBBBBBBBBBBBBB"};
-    for(int i=0; i<4; i++)
+    
+	for(int i=0; i<4; i++)
     {
         word(words[i]);
-        //std::cout<< words[i] << std::endl;
     }
+
     return 0;
 }

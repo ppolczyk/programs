@@ -16,10 +16,7 @@ void factorial(unsigned int a)
         }
     
         fac = fac%100;
-        int ans[2];
-        ans[0] = fac/10;
-        ans[1] = fac%10;
-        std::cout << ans[0] << ' ' << ans[1] << std::endl;
+        std::cout << fac/10 << ' ' << fac%10 << std::endl;
     }
 }
 
